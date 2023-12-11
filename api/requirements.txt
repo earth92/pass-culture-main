@@ -39,7 +39,7 @@ notion-client==1.0.0
 openpyxl
 pgcli # a tool not used in code. There is no point in pinning its version
 phonenumberslite==8.12.*
-Pillow>=8.1.1
+Pillow>=10.0.1
 psycopg2
 pydantic[email]==1.10.2
 PyJWT[crypto]==2.4.0
@@ -55,7 +55,7 @@ pytest-dotenv
 pytest-socket
 python-dotenv==0.14.0
 pyyaml==6.0
-requests==2.26.0
+requests==2.31.0
 requests_mock
 rq==1.5.2
 schwifty==2020.9.0
@@ -77,9 +77,11 @@ types-requests
 types-urllib3
 # Pin weasyprint to keep new versions from changing how our PDF files look.
 weasyprint==56.1
-Werkzeug==2.0.3
+Werkzeug==2.3.8
 WTForms==3.0.1
 WTForms-SQLAlchemy==0.3
 XlsxWriter
 Flask-WTF==1.0.1
 zeep==4.1.0
+pydantic>=1.10.13 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
