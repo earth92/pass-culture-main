@@ -55,7 +55,7 @@ pytest-dotenv
 pytest-socket
 python-dotenv==0.14.0
 pyyaml==6.0
-requests==2.26.0
+requests==2.32.0
 requests_mock
 rq==1.5.2
 schwifty==2020.9.0
