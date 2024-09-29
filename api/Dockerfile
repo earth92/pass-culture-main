@@ -1,6 +1,6 @@
 ########## BUILDER ##########
 
-FROM python:3.10-slim AS builder
+FROM python:3.13.0rc2-slim AS builder
 
 RUN apt-get update \
 	&& apt-get -y install \
@@ -20,7 +20,7 @@ RUN pip install --user \
 
 ########## SOURCES ##########
 
-FROM python:3.10-slim AS sources
+FROM python:3.13.0rc2-slim AS sources
 
 RUN mkdir -p /tmp/src
 
@@ -32,7 +32,7 @@ RUN rm -rf tests/ pyproject.toml
 
 ######### LIB ##########
 
-FROM python:3.10-slim AS lib
+FROM python:3.13.0rc2-slim AS lib
 
 RUN useradd -rm -d /home/pcapi -u 1000 pcapi
 
